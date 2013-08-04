@@ -1,0 +1,32 @@
+/*   
+Theme Name: Daigo 2013 Reverie child 
+Theme URI: 
+Description: Reverie Child Theme by Daigo. Responsive and based on Foundation 4. Child theme developed in August 2013.
+Author: Daigo Fujiwara
+Author URI: http://daigo.org/
+Template: reverie
+Version: 1.0
+Tags: 
+
+*/
+
+/* Googe fonts */
+/* I will be using those fonts.
+headlines: Stint Ultra Expanded 
+body: Lora, 18px over 28px 
+daigo.org Logo is Didact Gothic
+*/
+
+
+@import url("http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Stint+Ultra+Expanded|Didact+Gothic");
+
+/* getting base css for reverie */
+
+@import url("../reverie/style.css");
+
+
+/* custom CSS link */
+/* this is how I uded to do it, but why not just edit here? 
+@import url("custom/daigo.css");
+*/
+

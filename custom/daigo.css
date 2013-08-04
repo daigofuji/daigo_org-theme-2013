@@ -1,0 +1,498 @@
+/*
+Changed font stack September 10, 2010:
+Old list:
+Headline and title (sans - wide/round): 'URW Gothic L', 'Century Gothic', gothic, ' Trebuchet MS', sans-serif;
+Main content serif (Serif): 'URW Palladio L', 'Book Antiqua', 'Optima', 'Palatino', 'Bitstream Vera Serif', serif;
+Small content (sans): 'Bitstream Vera Sans', 'Tahoma', Verdana, Arial, Helvetica, sans-serif;
+
+New list:
+Headline and title (sans - wide/round):'Century Gothic', 'Microsoft Snas Serif','Frutiger Linotype','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Verdana,Arial,sans-serif;
+Main content serif (Serif): Cambria, Georgia, serif;
+Small content (sans): Optima,'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, sans-serif;
+code, samp, pre: 'Lucida Sans Typewriter',Courier, 'Courier New', 'Andale Mono', Fixed, monospace;
+	
+Referenced: http://www.awayback.com/revised-font-stack/
+*/
+
+body {
+background: #fff url(/images/background_texture.jpg) repeat-y center top;}
+
+body, div, td, p, th {
+	/* font-family: Cambria, Georgia, serif; */
+	
+	}	
+
+h1,h2,h4,h5,h6,h3 {
+	font-weight: 300;
+	font-family: museo-1,museo-2,Verdana,Arial,sans-serif;
+	text-shadow: 1px 2px 0px #ddd;
+	}
+	
+h1, h1 a:link, h1 a:hover, h1 a:visited {
+	color: #cccccc;
+	text-decoration: none;
+	}
+	
+h5 {
+	color: #cccccc;
+	margin: 0;
+	padding: 0;
+	}
+
+#about, small {
+	/* font-size: 80%; 
+	margin: 0 0 1em 0; padding:0; 
+ 	font-family: Optima,'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, sans-serif; */
+	}
+
+.navigation {
+	/* font-size: 90%; 
+	font-family: Optima,'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, sans-serif; */
+	}
+.alignright {
+	text-align:right;
+	}
+
+/* -- content -- */
+
+.postfoot, .postmetadata {
+	text-align:right;
+	/* font-size:70%;
+	margin: 0 0 2em 0; padding:0; */
+	/* font-family: Optima,'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, sans-serif; */
+	}
+.wp-caption-text {
+	font-family: Georgia, serif;
+	font-size:75%;
+	color: #666;
+	}
+.alt {
+	text-align:left;
+	color: #666;
+	}
+	
+h1.entry-title, h2.entry-title {
+	font-weight: 300;
+	font-family:  museo-1,museo-2,Verdana,Arial,sans-serif;
+	text-shadow: 1px 2px 0px #ddd;
+	}
+
+h2 a, h3 a {
+	text-decoration:none;
+	}
+h2 a:hover, h3 a:hover {
+	text-decoration: underline;
+	}
+
+.storycontent h3 {
+	}
+	
+.storycontent h4 {
+	font-weight: normal;
+	font-size: 110%;
+	margin: 0; padding:0.3em 0 0}
+
+h3.postdate {
+	font-family: Optima,'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, sans-serif;
+	font-size:90%;
+	letter-spacing:0.1em;
+	color:#cccccc;
+	margin:1.5em 0 0.2em 0; padding:0;
+	border-bottom: solid 1px #cccccc;
+	text-align:right;
+	}
+div#content > h3:first-child {
+	margin-top: 0;
+	}
+
+code, samp, pre {
+	font-family: 'Lucida Sans Typewriter','Courier New', Courier, 'Andale Mono', Fixed, monospace;
+	}
+
+.hide {
+	display: none;
+	}
+	
+	
+dd {
+	padding-left:2em; color: #666;
+	}
+/* 	####### HEADER DEAL ####### */	
+
+/* Search box above header */
+#header-aside, #access {
+	position: relative;
+	max-width: 1218px;
+	margin: 0px auto;
+}
+
+#header-aside .widgettitle {
+	display: none;
+}
+
+#header-aside form {
+	float:right;
+	vertical-align: baseline;
+}
+	
+/* ######## HEADER DEAL ####### */	
+	
+#branding {
+	padding: 0px 0px 17px;
+	background: transparent url(/images/glasses.gif) 5px 15px no-repeat; 
+
+}
+
+#branding #blog-title {
+	font-weight: normal; 
+	font-size: 3em;
+	font-family:"dutismo-1","dutismo-2",'Century Gothic',Verdana,Arial,sans-serif;
+	margin-top:7px;
+	text-shadow: 0px 1px 1px #fff;
+}
+#branding #blog-title span {
+	margin-left: 100px;
+}
+#blog-description {
+	margin-left: 100px;
+	font-size: .9em;
+	line-height: 1.1em;
+	margin-top:0.2em;
+	text-shadow: 0px 1px 1px #fff;
+}
+#main {
+	padding-top:22px;
+}
+#access {
+	border-bottom: none;
+}
+#access .menu {
+	width:300px;
+	float:right;
+}
+#access .sf-menu a {
+	border-bottom: none;
+}
+
+#header, #footer {
+margin: 0 auto;
+}
+
+#content {
+/* width: 620px; */
+}
+.form-textarea {
+	margin-right:10px;
+}
+#footer {
+border-top: none;
+}
+
+/*
+
+########## CUSTOM COLORS ##########
+########## CUSTOM COLORS ##########
+########## CUSTOM COLORS ##########
+
+*/
+/* Blue */
+
+body.blue #main { 
+	background: #ffffff url(/images/blue_bg2011.png) right repeat-y; 
+	}
+	
+.blue .darkcolor, .blue h1,.blue h1 a:link, .blue h1 a:hover, .blue h1 a:visited, .blue a:link, .blue .bloglog b, .blue .storycontent h3, .blue .storycontent h4, {
+	color: #1f324d;
+	}
+.blue .midcolor, .blue a:visited, .blue h2, .blue .bloglog, .blue .permlink, .blue .bloggerlink, .blue h2 a, .blue h2 a:hover, .blue small, .blue #blog-description, .blue #blog-title a, .blue .widgettitle {
+	color: #8ea8cb;
+	} 
+.blue .basecolor, .blue h3.postdate, .blue h5, .blue #blog-title a:active, .blue #blog-title a:hover  {
+	color: #dae9fd;
+	}
+
+.blue #primary {
+	border: 1px solid #dae9fd;
+	}
+
+.blue h3.postdate {
+	border-bottom: solid 1px #dae9fd;
+	}
+
+.blue a:hover {
+	color: #003;
+	}
+ 
+.blue .post ul {
+	list-style-image: url(/images/li_blu.gif);
+	}
+	
+/* Green */
+body.green #main{ 
+	background: #ffffff url(/images/green_bg2011.png) right repeat-y;
+ 	border-left: 1px #e0edd0 solid;
+	}
+	
+.green .darkcolor, .green a:link, .green .bloglog b, .green .storycontent h3, .green .storycontent h4, .green h1, .green h1 a:link, .green h1 a:hover, .green h1 a:visited {
+	color: #314836;
+	}
+.green .midcolor, .green a:visited, .green h2, .green .bloglog, .green .permlink, .green .bloggerlink, .green h2 a, .green h2 a:hover, .green small, .green #blog-description, .green #blog-title a, .green .widgettitle {
+	color: #8bad93;
+	} 
+.green .basecolor, .green #blog-title a:active, .green #blog-title a:hover, .green h3.postdate, .green h5 {
+	color: #e0edd0;
+	}
+.green #primary {
+	border: 1px solid #e0edd0;
+	}
+.green h3.postdate {
+	border-bottom: solid 1px #e0edd0;
+	}
+
+.green a:hover {
+	color: #030;
+	}
+ 
+.green .post ul {
+	list-style-image: url(/images/li_grn.gif);
+	}
+	
+/* Purple */
+body.purple #main { 
+	 background: #ffffff url(/images/purple_bg2011.png) right repeat-y;
+  	border-left: 1px #e1dce5 solid;
+	}
+	
+.purple .darkcolor, .purple a:link, .purple .bloglog b, .purple .storycontent h3, .purple .storycontent h4, .purple h1, .purple h1 a:link, .purple h1 a:hover, .purple h1 a:visited{
+	color: #190b31;
+	}
+.purple .midcolor, .purple a:visited, .purple h2, .purple .bloglog, .purple .permlink, .purple .bloggerlink, .purple h2 a, .purple h2 a:hover, .purple small, .purple #blog-description, .purple #blog-title a, .purple .widgettitle {
+	color: #9081a1;
+	} 
+.purple .basecolor, .purple #blog-title a:active, .purple #blog-title a:hover, .purple h3.postdate, .purple h5 {
+	color: #e1dce5;
+	}
+.purple #primary {
+	border: 1px solid #e1dce5;
+	}
+.purple h3.postdate {
+	border-bottom: solid 1px #e1dce5;
+	}
+
+.purple a:hover {
+	color: #303;
+	}
+ 
+.purple .post ul {
+	list-style-image: url(/images/li_ppl.gif);
+	}
+
+
+/* Red */
+body.red #main{ 
+	background: #ffffff url(/images/red_bg2011.png) right repeat-y;
+	border-left: 1px #fed8cd solid;
+	}
+	
+.red .darkcolor, .red a:link, .red .bloglog b, .red .storycontent h3, .red .storycontent h4, .red h1, .red h1 a:link, .red h1 a:hover, .red h1 a:visited {
+	color: #661c12;
+	}
+.red .midcolor, .red a:visited, .red h2, .red h2 a:link, .red h2 a:hover, .red .bloglog, .red .permlink, .red .bloggerlink, .red small, .red #blog-description, .red #blog-title a, .red .widgettitle {
+	color: #b34f48;
+	} 
+.red .basecolor,  .red #blog-title a:active,  .red #blog-title a:hover, .red h3.postdate, .red h5 {
+	color: #fed8cd;
+	}
+.red #primary {
+	border: 1px solid #fed8cd;
+	}
+.red h3.postdate {
+	border-bottom: solid 1px #ffc2bc;
+	}
+
+.red a:hover {
+	color: #900;
+	}
+ 
+.red .post ul {
+	list-style-image: url(/images/li_red.gif);
+	}
+
+
+/* removing the yellow from comment by author for thematic */
+	.blue #comments-list li.bypostauthor {
+		background-color:#dae9fd;
+	}	
+	.green #comments-list li.bypostauthor {
+		background-color:#e0edd0;
+	}	
+	.purple #comments-list li.bypostauthor {
+		background-color:#e1dce5;
+	}	
+	.red #comments-list li.bypostauthor {
+		background-color:#fed8cd;
+	}	
+	
+	
+/*
+########## CUSTOM COLORS ##########
+########## CUSTOM COLORS ##########
+########## CUSTOM COLORS ##########
+*/
+	
+/* transition test */
+
+.entry-title a:hover {	
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+.entry-title a {
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+	
+/* FLICKR stuff */	
+	
+.flickr_badge_image {display:inline; margin:5px 0 5px 10px; padding: 5px 0px; }
+#flickr_badge_image1 {height:80px;} 
+	
+/* table - chart */	
+	
+	table.chart {
+    	margin-bottom: 2em;
+    	border-top: 1px solid #ccc;
+    	border-left: 1px solid #ccc;
+    	border-collapse: collapse;
+    	font-size: 100%;
+    	font-family: sans-serif
+    	}
+
+    table.chart th  {
+    	background: #eee;
+    	}
+
+    table.chart th.caption  {
+    	background: #ddd;
+    	}
+
+    table.chart th, table.chart td {
+    	padding: 5px;
+    	border-right: 1px solid #ccc;
+    	border-bottom: 1px solid #ccc;
+    	font-size: 80%;
+    	font-family: sans-serif
+    	}
+
+    table.chart td {
+    	vertical-align: top;
+    	}	
+    	
+.caption, .photocaption, tfoot td {
+	margin-top: 0;
+	font-size:80%;
+	color: #666;
+	}
+
+p.caption {
+	margin-top:-22px;padding-top:0;
+}
+
+
+
+/* Twitter stuff */
+
+a.aktt_tweet_time, a.aktt_tweet_time:active, a.aktt_tweet_time:visited, a.aktt_tweet_time:link {
+	color:#eee;
+	text-decoration:none;
+}
+a.aktt_tweet_time:hover {
+	text-decoration:underline;
+	color:#ccc;
+}    	
+
+a.pdf {
+	background:url("/img/pdf.gif") no-repeat right top;
+	padding-right:20px;
+	margin-right: 4px;
+}
+a.doc {
+	background:url("/img/doc.gif") no-repeat right top;
+	padding-right:20px;
+	margin-right: 4px;
+}
+a.external {
+	background:url("/img/othersite.gif") no-repeat right top;
+	padding-right:19px;
+	margin-right: 4px;
+
+}
+
+
+
+/* Tumblr Badge js style http://code.google.com/p/tumblrbadge/ */
+.tumblr-badge ul {
+	margin-left: 0px;
+}
+
+.tumblr {
+        list-style: none;
+        padding: 0;
+}
+.tumblr li {
+        list-style: none;
+        margin: .25em 0 1em 0;
+        padding-right: .25em;
+        width: 121px;
+        height: 200px;
+        overflow:hidden;
+        float:left;
+}
+.tumblr p {
+        margin: 0;
+}
+.tumblr img {
+        display: block;
+}
+.tumblr em {
+        display: block;
+        margin-top: 0.2em;
+        line-height: 1.2;
+}
+.tumblr .tumblr-post-date{
+        display: block;
+        font-size: 0.8em;
+}
+.tumblr  a {
+	 	color:#999;
+		 text-decoration:none;
+ }
+ .tumblr  a:hover {
+	 	color:#000;
+		 text-decoration: underline;
+ }
+.more-tumblr {
+		margin-bottom: 2em;
+		font-weight: bold;
+}
+
+/* http://webdesignerwall.com/tutorials/css-elastic-videos 
+wrap the video with div class="video" */
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video iframe,  
+.video object,  
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
