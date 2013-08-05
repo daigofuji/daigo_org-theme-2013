@@ -15,7 +15,7 @@
 			</div>
 			<footer>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
-				<p><?php the_tags(); ?></p>
+				<p><i class="icon-tags"></i> <?php the_tags(); ?></p>
 			</footer>
 			<?php comments_template(); ?>
 		</article>
