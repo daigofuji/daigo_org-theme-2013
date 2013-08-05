@@ -99,6 +99,15 @@ a {
 	color: #e0edd0;
 }
 
+article {
+	margin-bottom: 2.25em;
+}
+article header {
+	margin-bottom: 1.25em;
+}
+
+article.fixed {position:static;}
+
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
@@ -158,7 +167,7 @@ time, .byline {
 	font-weight:bold;
 }
 
-.post-metadata {
+article footer p {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
 	font-size: 0.875em; /* 14px */
 	color: #666;
@@ -258,18 +267,163 @@ header hr {
 	border-color: #ddd;
 }
 
+/* spacing in the side bar */
+#sidebar .row {
+	margin-bottom: 2em;
+}
 
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media only screen and (min-width: 768px) {}
+/* Footer */
+.site-footer {
+	margin: 3em 0;
+}
+.site-footer p {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
+	font-size: 0.875em; /* 14px */
+	color: #999;
+	margin-bottom:2em;
+}
+.site-footer > a {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
+	font-size: .688em; /* 11px */
+	color: #ccc;	
+}
+	
+/* table - chart */	
+	
+	table.chart {
+    	margin-bottom: 2em;
+    	border-top: 1px solid #ccc;
+    	border-left: 1px solid #ccc;
+    	border-collapse: collapse;
+    	font-size: 100%;
+    	font-family: sans-serif
+    	}
 
-/* Used to alter styles for screens at least 1280px wide. */
-@media only screen and (min-width: 1280px) {}
+    table.chart th  {
+    	background: #eee;
+    	}
 
-/* Used to alter styles for screens at least 1440px wide. */
-@media only screen and (min-width: 1440px) {}
+    table.chart th.caption  {
+    	background: #ddd;
+    	}
 
-/* Apply styles to screens in landscape orientation */
-@media only screen and (orientation: landscape) {}
+    table.chart th, table.chart td {
+    	padding: 5px;
+    	border-right: 1px solid #ccc;
+    	border-bottom: 1px solid #ccc;
+    	font-size: 80%;
+    	font-family: sans-serif
+    	}
 
-/* Apply styles to screens in portrait orientation */
-@media only screen and (orientation: portrait) {}
+    table.chart td {
+    	vertical-align: top;
+    	}	
+    	
+.caption, .photocaption, tfoot td {
+	margin-top: 0;
+	font-size:80%;
+	color: #666;
+	}
+
+p.caption {
+	margin-top:-22px;padding-top:0;
+}
+
+
+
+/* Twitter stuff */
+
+a.aktt_tweet_time, a.aktt_tweet_time:active, a.aktt_tweet_time:visited, a.aktt_tweet_time:link {
+	color:#eee;
+	text-decoration:none;
+}
+a.aktt_tweet_time:hover {
+	text-decoration:underline;
+	color:#ccc;
+}    	
+
+a.pdf {
+	background:url("/img/pdf.gif") no-repeat right top;
+	padding-right:20px;
+	margin-right: 4px;
+}
+a.doc {
+	background:url("/img/doc.gif") no-repeat right top;
+	padding-right:20px;
+	margin-right: 4px;
+}
+a.external {
+	background:url("/img/othersite.gif") no-repeat right top;
+	padding-right:19px;
+	margin-right: 4px;
+
+}
+
+
+
+/* Tumblr Badge js style http://code.google.com/p/tumblrbadge/ */
+.tumblr-badge ul {
+	margin-left: 0px;
+}
+
+.tumblr {
+        list-style: none;
+        padding: 0;
+}
+.tumblr li {
+        list-style: none;
+        margin: .25em 0 1em 0;
+        padding-right: .25em;
+        width: 121px;
+        height: 200px;
+        overflow:hidden;
+        float:left;
+}
+.tumblr p {
+        margin: 0;
+}
+.tumblr img {
+        display: block;
+}
+.tumblr em {
+        display: block;
+        margin-top: 0.2em;
+        line-height: 1.2;
+}
+.tumblr .tumblr-post-date{
+        display: block;
+        font-size: 0.8em;
+}
+.tumblr  a {
+	 	color:#999;
+		 text-decoration:none;
+ }
+ .tumblr  a:hover {
+	 	color:#000;
+		 text-decoration: underline;
+ }
+.more-tumblr {
+		margin-bottom: 2em;
+		font-weight: bold;
+}
+
+/* http://webdesignerwall.com/tutorials/css-elastic-videos 
+wrap the video with div class="video" */
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video iframe,  
+.video object,  
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+

@@ -6,14 +6,24 @@
 </div>
 
 <footer class="row full-width" role="contentinfo">
-	<div class="small-12 large-4 columns">
-		<?php wp_nav_menu(array('theme_location' => 'utility', 'container' => false, 'menu_class' => 'inline-list right')); ?>
+	<div class="small-12 pagination-centered 
+columns ">
+		<?php wp_nav_menu(array('theme_location' => 'utility', 'container' => false, 'menu_class' => 'inline-list centered')); ?>
 	</div>
 	
-	<div class="small-12 columns">
-		<p class="site-footer">&copy; 2002-<?php echo date('Y'); ?>. daigo.org by Daigo Fujiwara</p>
+	<div class="small-12 columns pagination-centered site-footer">
+		<hr/>
+		<p class="copyright">&copy; 2002-<?php echo date('Y'); ?>. <strong>daigo.org</strong> by <em>Daigo Fujiwara</em></p>
+
+		<p class="found-me">You can find me at: 
+
+			<a href="https://twitter.com/daigofuji" title="Follow me @DaigoFuji"><i class="icon-twitter-sign icon-large"></i></a> 
+			<a href="https://github.com/daigofuji" title="Code on the github"><i class="icon-github-sign icon-large"></i></a> 
+			<a href="http://daigo.tumblr.com/" title="My food log"><i class="icon-tumblr-sign icon-large"></i></a> 
+			<a href="http://www.linkedin.com/in/daigo" title="Professional connections"><i class="icon-linkedin-sign icon-large"></i></a> 
+		</p>
 		<p>
-			Powered by WordPress. Crafted on <a href="http://themefortress.com/reverie/" rel="nofollow" title="Reverie Framework">Reverie</a>. This theme can be found on github. </p> <?php wp_loginout(); ?>
+			Powered by <a href="http://codex.wordpress.org/">WordPress</a>. Crafted on <a href="http://themefortress.com/reverie/" rel="nofollow" title="Reverie Framework">Reverie</a>. This child theme <a href="https://github.com/daigofuji/daigo_org-theme-2013">is on github</a>. </p> <?php wp_loginout(); ?>
 	</div>
 	
 
