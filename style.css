@@ -16,9 +16,9 @@ headlines: Stint Ultra Expanded
 body: Lora, 18px over 28px 
 daigo.org Logo is Didact Gothic
 */
+@import url("http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Stint+Ultra+Expanded");
+@import url("css/font-awesome.min.css");
 
-
-@import url("http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Stint+Ultra+Expanded|Didact+Gothic");
 
 /* getting base css for reverie */
 
@@ -30,3 +30,246 @@ daigo.org Logo is Didact Gothic
 @import url("custom/daigo.css");
 */
 
+/* Over ride foundation defaults 
+	
+
+*/ 
+
+body {
+	font-family: 'Lora', Georgia, serif;
+}
+.row {
+	max-width: 76.125em;
+}
+.contain-to-grid .top-bar {
+	max-width: 76.125em;
+}
+/* Default Link Styles
+foundation link color is #2ba6cb hover #2795b6 */
+a {
+  color: #8bad93;
+	}
+  a:hover, a:focus {
+    color: #314836; 
+	}
+.accent {
+	color: #8bad93;
+}
+
+/* colors: default to Green */
+/* Green */
+.green .darkcolor, .green a:hover, .green a:focus {
+	color: #314836;
+	}
+.green .midcolor, .green a {
+	color: #8bad93;
+	} 
+.green .basecolor {
+	color: #e0edd0;
+}
+
+/* Blue */
+.blue .darkcolor, .blue a:hover, .blue a:focus {
+	color: #1f324d;
+	}
+.blue .midcolor, .blue a {
+	color: #8ea8cb;
+	} 
+.blue .basecolor {
+	color: #dae9fd;
+	}
+/* Purple */
+.purple .darkcolor, .purple a:hover, .purple a:focus {
+	color: #314836;
+	}
+.purple .midcolor, .purple a {
+	color: #8bad93;
+	} 
+.purple .basecolor {
+	color: #e0edd0;
+}
+/* Red */
+.red .darkcolor, .red a:hover, .red a:focus {
+	color: #314836;
+	}
+.red .midcolor, .red a {
+	color: #8bad93;
+	} 
+.red .basecolor {
+	color: #e0edd0;
+}
+
+
+/* Default header styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Stint Ultra Expanded',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #222222;
+  line-height: 1em; }
+
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0; }
+
+.brand {
+	overflow: hidden;
+}
+.brand h1 {
+	margin-left:60px;
+} 
+.brand h4 {
+	font-family: 'Lora', Gergia, serif;
+	font-style: italic;
+	margin-left: 60px;
+	color: #999;
+	font-size:1.1em;
+}
+.glasses-conatiner {
+	width: 55px;
+	float:left;
+	margin-top:10px;
+}
+
+@media only screen and (min-width: 48em){
+	/* Brand - expand with menu */
+	.brand h1 {
+		margin-left:80px;
+	} 
+	.brand h4 {
+		margin-left: 80px;
+		font-size:1.2em;
+	}
+	.glasses-conatiner {
+		width: 70px;
+		margin-top:20px;
+	}
+}
+
+time, .byline {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
+	font-size: 0.875em; /* 14px */
+	color: #666;
+	margin-bottom: 0.2em;
+}
+.editthis {
+	float:right;
+	font-weight:bold;
+}
+
+.post-metadata {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
+	font-size: 0.875em; /* 14px */
+	color: #666;
+}
+/* body text */
+
+.entry-content p {
+	font-size: 1.125em;  /* 18px */
+	line-height: 1.750em; /* 28px */
+}
+
+/* Top nav area */
+.the-d {
+	font-family: 'Stint Ultra Expanded',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ 	text-shadow: 1px -2px 0 rgba(0,0,0,.2);
+ 	color:white;
+}
+.top-bar {
+	background-color: #ccc;
+	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#e0e0e0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
+	background: -webkit-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: -moz-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: -o-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	border-top: 1px solid #f2f2f2;}
+ .contain-to-grid  {
+	background: transparent;
+}
+.top-bar.expanded {
+	background-color: #ccc;
+	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#e0e0e0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
+	background: -webkit-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: -moz-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: -o-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #8c8c8c; }   
+.top-bar.expanded .title-area {
+	background: transparent;
+}
+.top-bar-section ul {
+ background: transparent; }
+  .top-bar-section ul li > a {
+    background: transparent; }
+    .top-bar-section ul li > a:hover {
+      background: rgba(0,0,0,.05); }
+    .top-bar-section ul li > a.button {
+      background: #999;
+      font-size: 0.8125em; }
+      .top-bar-section ul li > a.button:hover {
+        background: #666; }
+  .top-bar-section ul li.active a {
+    background: rgba(0,0,0,.05); }
+	.top-bar-section .divider {
+		border-bottom: solid 1px #e0e0e0;
+		border-top: solid 1px #b0b0b0;
+	}
+.top-bar .name h1 a, .top-bar-section ul li > a {
+	color: #6d6d6d;
+}
+
+@media only screen and (min-width: 58.75em) {
+
+/* Nav */
+ .contain-to-grid  {
+	background-color: #ccc;
+	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#e0e0e0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
+	background: -webkit-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: -moz-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: -o-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #8c8c8c;
+}
+   
+  .top-bar {
+    background: transparent; }
+
+    .top-bar.expanded {
+      background: transparent; }
+ .top-bar-section li a:not(.button) {
+      background: transparent; }
+  .top-bar-section li a:not(.button):hover {
+        background: rgba(0,0,0,.1); }
+ .top-bar-section .dropdown li a {
+        background: rgba(0,0,0,.05); }
+      .top-bar-section .dropdown li label {
+        background: rgba(0,0,0,.05); }
+    .top-bar-section .has-form {
+      background: transparent;}
+       .top-bar-section > ul > .divider {
+      border-right: solid 1px #e0e0e0;
+      border-left: solid 1px #b0b0b0; }
+}
+
+header hr {
+	border-color: #ddd;
+}
+
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media only screen and (min-width: 768px) {}
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media only screen and (min-width: 1280px) {}
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media only screen and (min-width: 1440px) {}
+
+/* Apply styles to screens in landscape orientation */
+@media only screen and (orientation: landscape) {}
+
+/* Apply styles to screens in portrait orientation */
+@media only screen and (orientation: portrait) {}

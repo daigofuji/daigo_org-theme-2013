@@ -9,16 +9,14 @@
 
 // Adds a home link to your menu
 // http://codex.wordpress.org/Template_Tags/wp_page_menu
-function childtheme_menu_args($args) {
-    $args = array(
-        'show_home' => 'Home',
-        'sort_column' => 'menu_order',
-        'menu_class' => 'menu',
-        'echo' => false
-    );
-    return $args;
+// Filter wp_nav_menu() to add additional links and other output
+// http://wordpress.org/support/topic/add-home-to-menu-across-top-of-site
+function new_nav_menu_items($items) {
+    $homelink = '<li class="home"><a href="' . home_url( '/' ) . '">' . __('Home') . '</a></li>';
+    $items = $homelink . $items;
+    return $items;
 }
-add_filter('wp_page_menu_args','childtheme_menu_args', 20);
+add_filter( 'wp_nav_menu_items', 'new_nav_menu_items' );
 
 function body_color_class() {
 	if(isset($_COOKIE['sitestyle'])){
@@ -48,29 +46,22 @@ function namespace_login_headertitle( $title ) {
 add_filter( 'login_headertitle', 'namespace_login_headertitle' );
 
 
-// I need to add this meta in head for responsive web
+// I need to add this meta in head for responsive web -- don't need it. foundation takes care of this. Also, I am adding all teh header items within header.php 
 // <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-function viewport_responsive_meta() {
+/* function viewport_responsive_meta() {
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <?php
 }
 add_action('wp_head', 'viewport_responsive_meta');
-
-
-function respond_scripts() {?>
-<!--[if lt IE 9]>
-    <script src="<?php echo get_bloginfo('stylesheet_directory'); ?>/custom/respond.min.js" type="text/javascript"></script>
-<![endif]-->
-<?php }
-add_action('wp_head','respond_scripts');
-
-function my_typekit_js() {
-?>
-<script type="text/javascript" src="http://use.typekit.com/iiy6qtl.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<?php
+*/ 
+/* edited function.php of the parent, I wanted to format some of the stuff:
+// return entry meta information for posts, used by multiple loops. 
+// edited Aug 2013 by Daigo
+function reverie_entry_meta() {
+    echo '<p class="byline author">'. __('By', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a> '. edit_post_link('Edit this', " | ") .' </p>';
+    echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate><i class="icon-calendar-empty"></i> '. sprintf(__('Posted on %s at %s.', 'reverie'), get_the_time('l, F jS, Y'), get_the_time()) .'</time>';
 }
-add_action('wp_head', 'my_typekit_js');
+*/
 
 ?>
