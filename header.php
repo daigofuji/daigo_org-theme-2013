@@ -1,13 +1,14 @@
 <!doctype html>
 <!--[if IE 8]><html class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
-<!-- Welcome to web home of Daigo Fujiwara
-       __      _                              
+<!-- Love everyone with all heart, all soul and all mind.
+	 We are all fellow-passengers to the grave. Mt 22:36-40
+       __      _
   ____/ /___ _(_)___ _____   ____  _________ _
  / __  / __ `/ / __ `/ __ \ / __ \/ ___/ __ `/
-/ /_/ / /_/ / / /_/ / /_/ // /_/ / /  / /_/ / 
-\__,_/\__,_/_/\__, /\____(_)____/_/   \__, /  
-             /____/                  /____/   
+/ /_/ / /_/ / / /_/ / /_/ // /_/ / /  / /_/ /
+\__,_/\__,_/_/\__, /\____(_)____/_/   \__, / 
+             /____/                  /____/  
 -->
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
