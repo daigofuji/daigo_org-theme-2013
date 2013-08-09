@@ -12,14 +12,18 @@ get_header(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php reverie_entry_meta(); ?>
+				<?php 
+					/* reverie_entry_meta(); 
+						Removing everything but the title! This page is a free reign!
+					*/
+				?>
 			</header>
-			<div class="entry-content">
+			<div class="page-content"> <?php /* no longer entry content */ ?>
 				<?php the_content(); ?>
 			</div>
 			<footer>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
-				<p><i class="icon-tags"></i> <?php the_tags(); ?></p>
+				<?php /* removed tags */ ?>
 			</footer>
 			<?php comments_template(); ?>
 		</article>

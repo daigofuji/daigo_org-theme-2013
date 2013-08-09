@@ -222,7 +222,11 @@ input#searchsubmit {
 .entry-content p,
 .entry-content > ul,
 .entry-content > ol,
-.entry-content > dl {
+.entry-content > dl,
+.page-content p,
+.page-content > ul,
+.page-content > ol,
+.page-content > dl {
 	font-size: 1.125em;  /* 18px */
 	line-height: 1.750em; /* 28px */
 }
@@ -354,7 +358,8 @@ header hr {
 	article header > time,
 	article footer,
 	.entry-content > p,
-	.entry-content > pre {
+	.entry-content > pre,
+	#commentform {
 		margin-left: 2%;
 		-ms-word-wrap: break-word;
 		word-wrap: break-word;
@@ -381,7 +386,8 @@ header hr {
 	article header > time,
 	article footer,
 	.entry-content > p,
-	.entry-content > pre {
+	.entry-content > pre,
+	#commentform {
 		margin-left: 15%;
 	}
 	/* level two */
@@ -421,9 +427,8 @@ header hr {
 }
 
 /* specify icon here */
-.entry-content > ul li:before {
-	content: "\f15c";
-	font-family: FontAwesome;
+.entry-content > ul.arrow li:before {
+	content: "\f061";
 }
 
 /* for side bar and footer widget */
@@ -436,6 +441,7 @@ header hr {
 	font-family: FontAwesome;
 	display: inline-block;
 	margin-left: -.8em;	
+	width:.4em;
 }
 
 /* spacing in the side bar */
