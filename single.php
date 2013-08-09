@@ -17,8 +17,8 @@
 			<footer>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
 				<p class="post-metadata"><?php /* post meta stuff added by Daigo Aug. 2013 */ ?>
-					This post was published on <i class="icon-calendar"></i> <?php the_time('l, F jS, Y') ?> at <i class="icon-time"></i> <?php the_time() ?>. Written <i class="icon-pencil"></i> by me, <?php the_author_posts_link() ?>. The post is filed <i class="icon-folder-open"></i> under <?php the_category(' and ') ?> categories. Comments <i class="icon-comments"></i> are welcome below, and they can be followed with this <?php comments_rss_link('RSS 2.0'); ?> <i class="icon-rss"></i> feed.<br/> 
-					<i class="icon-tags"></i> <?php the_tags(); ?>
+					This post was published on <i class="icon-calendar"></i> <?php the_time('l, F jS, Y') ?> at <i class="icon-time"></i> <?php the_time() ?>. <i class="icon-pencil"></i> Written by <?php the_author_posts_link() ?>. <i class="icon-folder-open"></i> The post is filed under <?php the_category(' and ') ?> categories. <i class="icon-comments"></i> Comments are welcome below, and they can be followed with this <?php comments_rss_link('RSS 2.0'); ?> <i class="icon-rss"></i> feed.<br/> 
+					<i class="icon-tags"></i> Tagged: <?php the_tags(); ?>
 				</p>
 				<?php edit_post_link('Edit this', '<p class="byline author editthis">','</p>'); ?>
 

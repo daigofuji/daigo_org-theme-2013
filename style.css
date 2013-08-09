@@ -104,7 +104,11 @@ article {
 	margin-bottom: 2.25em;
 }
 article header {
-	margin-bottom: 1.25em;
+	margin-bottom: 1.5em;
+}
+
+article header .author {
+	margin-top: .75em;
 }
 
 article.fixed {position:static;}
