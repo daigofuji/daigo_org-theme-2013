@@ -62,7 +62,7 @@ a {
 .green .darkcolor, .green a:hover, .green a:focus {
 	color: #314836;
 	}
-.green .midcolor, .green a {
+.green .midcolor, .green a, a.green {
 	color: #8bad93;
 	} 
 .green .basecolor {
@@ -73,7 +73,7 @@ a {
 .blue .darkcolor, .blue a:hover, .blue a:focus {
 	color: #1f324d;
 	}
-.blue .midcolor, .blue a {
+.blue .midcolor, .blue a, a.blue {
 	color: #8ea8cb;
 	} 
 .blue .basecolor {
@@ -83,7 +83,7 @@ a {
 .purple .darkcolor, .purple a:hover, .purple a:focus {
 	color: #314836;
 	}
-.purple .midcolor, .purple a {
+.purple .midcolor, .purple a, a.purple {
 	color: #8bad93;
 	} 
 .purple .basecolor {
@@ -93,7 +93,7 @@ a {
 .red .darkcolor, .red a:hover, .red a:focus {
 	color: #314836;
 	}
-.red .midcolor, .red a {
+.red .midcolor, .red a, a.red {
 	color: #8bad93;
 	} 
 .red .basecolor {
@@ -183,9 +183,22 @@ input#searchsubmit {
 	color: #000;
 }
 
+/* body text */
+
+.entry-content p,
+.entry-content > ul,
+.entry-content > ol,
+.entry-content > dl {
+	font-size: 1.125em;  /* 18px */
+	line-height: 1.750em; /* 28px */
+}
+
+.yarpp-related ol {
+	margin-left: 5%;
+}
 
 
-time, .byline {
+time, .byline, .rss-date, .post-date {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
 	font-size: 0.875em; /* 14px */
 	color: #666;
@@ -201,12 +214,7 @@ article footer p {
 	font-size: 0.875em; /* 14px */
 	color: #666;
 }
-/* body text */
 
-.entry-content p {
-	font-size: 1.125em;  /* 18px */
-	line-height: 1.750em; /* 28px */
-}
 
 /* Top nav area */
 .the-d {
@@ -216,22 +224,22 @@ article footer p {
 }
 .top-bar {
 	background-color: #ccc;
-	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#d0d0d0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
-	background: -webkit-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
-	background: -moz-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
-	background: -o-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
-	background: linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
+	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#d0d0d0),color-stop(50%,#cccccc),color-stop(100%,#c0c0c0));
+	background: -webkit-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
+	background: -moz-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
+	background: -o-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
+	background: linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
 	border-top: 1px solid #f2f2f2;}
  .contain-to-grid  {
 	background: transparent;
 }
 .top-bar.expanded {
 	background-color: #ccc;
-	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#d0d0d0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
-	background: -webkit-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
-	background: -moz-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
-	background: -o-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
-	background: linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
+	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#d0d0d0),color-stop(50%,#cccccc),color-stop(100%,#c0c0c0));
+	background: -webkit-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
+	background: -moz-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
+	background: -o-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
+	background: linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #8c8c8c; }   
 .top-bar.expanded .title-area {
@@ -354,6 +362,10 @@ header hr {
 }
 
 
+#tumblr-badge {
+	font-size: 0.875em;
+}
+
 /* Footer */
 
 .site-footer {
@@ -405,14 +417,21 @@ header hr {
     	vertical-align: top;
     	}	
     	
-.caption, .photocaption, tfoot td {
-	margin-top: 0;
-	font-size:80%;
-	color: #666;
+	p.caption, p.photocaption, tfoot td {
+		margin-top: 0;
+		font-size:80%;
+		color: #888;
+		}
+
+	p.caption {
+		margin-top:-22px;padding-top:0; margin-left:0;
 	}
 
-p.caption {
-	margin-top:-22px;padding-top:0;
+
+/* plugin stuff */
+
+.sharedaddy {
+	margin:1.5em 0;
 }
 
 
