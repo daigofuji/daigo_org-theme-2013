@@ -7,17 +7,7 @@
 // More ideas can be found on "A Guide To Customizing The Thematic Theme Framework" 
 // http://themeshaper.com/thematic-for-wordpress/guide-customizing-thematic-theme-framework/
 
-// Adds a home link to your menu
-// http://codex.wordpress.org/Template_Tags/wp_page_menu
-// Filter wp_nav_menu() to add additional links and other output
-// http://wordpress.org/support/topic/add-home-to-menu-across-top-of-site
-function new_nav_menu_items($items) {
-    $homelink = '<li class="home"><a href="' . home_url( '/' ) . '">' . __('Home') . '</a></li>';
-    $items = $homelink . $items;
-    return $items;
-}
-add_filter( 'wp_nav_menu_items', 'new_nav_menu_items' );
-
+// my original color changer, still going since 2002!
 function body_color_class() {
 	if(isset($_COOKIE['sitestyle'])){
 			$classes[] = trim($_COOKIE['sitestyle']);

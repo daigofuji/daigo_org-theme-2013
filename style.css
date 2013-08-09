@@ -143,14 +143,22 @@ h1, h2, h3, h4, h5, h6 {
 	color: #999;
 	font-size:1.1em;
 }
+
 .glasses-conatiner {
 	width: 55px;
 	float:left;
 	margin-top:10px;
 }
-.menu-icon span {
+
+.top-bar-section ul li > a,
+.menu-icon span,
+.top-bar-section input{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-weight: normal;
+}
+
+input#searchsubmit {
+	font-family: FontAwesome;
 }
 
 @media only screen and (min-width: 48em){
@@ -208,22 +216,22 @@ article footer p {
 }
 .top-bar {
 	background-color: #ccc;
-	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#e0e0e0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
-	background: -webkit-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: -moz-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: -o-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#d0d0d0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
+	background: -webkit-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
+	background: -moz-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
+	background: -o-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
+	background: linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
 	border-top: 1px solid #f2f2f2;}
  .contain-to-grid  {
 	background: transparent;
 }
 .top-bar.expanded {
 	background-color: #ccc;
-	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#e0e0e0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
-	background: -webkit-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: -moz-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: -o-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#d0d0d0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
+	background: -webkit-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
+	background: -moz-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
+	background: -o-linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
+	background: linear-gradient(#d0d0d0,#cccccc,#b0b0b0);
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #8c8c8c; }   
 .top-bar.expanded .title-area {
