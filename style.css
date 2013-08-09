@@ -59,10 +59,14 @@ a {
 
 /* colors: default to Green */
 /* Green */
-.green .darkcolor, .green a:hover, .green a:focus {
+.green .darkcolor, 
+.green a:hover, 
+.green a:focus {
 	color: #314836;
 	}
-.green .midcolor, .green a, a.green {
+.green .midcolor, 
+.green a, 
+.sub-nav dd a.green {
 	color: #8bad93;
 	} 
 .green .basecolor {
@@ -70,34 +74,46 @@ a {
 }
 
 /* Blue */
-.blue .darkcolor, .blue a:hover, .blue a:focus {
+.blue .darkcolor, 
+.blue a:hover, 
+.blue a:focus {
 	color: #1f324d;
 	}
-.blue .midcolor, .blue a, a.blue {
+.blue .midcolor, 
+.blue a, 
+.sub-nav dd a.blue {
 	color: #8ea8cb;
 	} 
 .blue .basecolor {
 	color: #dae9fd;
 	}
 /* Purple */
-.purple .darkcolor, .purple a:hover, .purple a:focus {
-	color: #314836;
+.purple .darkcolor, 
+.purple a:hover, 
+.purple a:focus {
+	color: #190b31;
 	}
-.purple .midcolor, .purple a, a.purple {
-	color: #8bad93;
+.purple .midcolor, 
+.purple a, 
+.sub-nav dd a.purple {
+	color: #9081a1;
 	} 
 .purple .basecolor {
-	color: #e0edd0;
+	color: #e1dce5;
 }
 /* Red */
-.red .darkcolor, .red a:hover, .red a:focus {
-	color: #314836;
+.red .darkcolor, 
+.red a:hover, 
+.red a:focus {
+	color: #661c12;
 	}
-.red .midcolor, .red a, a.red {
-	color: #8bad93;
+.red .midcolor, 
+.red a, 
+.sub-nav dd a.red {
+	color: #b34f48;
 	} 
 .red .basecolor {
-	color: #e0edd0;
+	color: #fed8cd;
 }
 
 article {
@@ -125,7 +141,12 @@ h1, h2, h3, h4, h5, h6 {
 	word-wrap: break-word;
 }
 
-  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  h1 small, 
+  h2 small, 
+  h3 small, 
+  h4 small, 
+  h5 small, 
+  h6 small {
     font-size: 60%;
     color: #6f6f6f;
     line-height: 0; }
@@ -198,7 +219,16 @@ input#searchsubmit {
 }
 
 
-time, .byline, .rss-date, .post-date {
+.entry-content > ul li {
+
+}
+
+
+
+time, 
+.byline, 
+.rss-date, 
+.post-date {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
 	font-size: 0.875em; /* 14px */
 	color: #666;
@@ -304,10 +334,6 @@ header hr {
 	border-color: #eee;
 }
 
-/* spacing in the side bar */
-#sidebar .row {
-	margin-bottom: 2em;
-}
 
 /* body spacer 
 	first child elements in .entry-content gets a little margin-left
@@ -329,7 +355,6 @@ header hr {
 	}
 
 	/* level three */
-
 	.entry-content > blockquote, 
 	.entry-content > address {
 		margin-left: 10%;
@@ -337,8 +362,28 @@ header hr {
 		word-wrap: break-word;
 	}
 
-/* side bar */
 
+/* Body unorderd list to have document icons. */ 
+/* http://stackoverflow.com/questions/13354578/custom-li-list-style-with-font-awesome-icon */
+.entry-content > ul li {
+  padding-left: 1.2em;
+  list-style: none;
+}
+.entry-content > ul li:before {
+	color: #bbb;
+	content: "\f15c";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-left: -1.2em; /*same as padding-left set on li*/
+	width: 1.2em; /*same as padding-left set on li*/
+}
+
+/* spacing in the side bar */
+#sidebar .row {
+	margin-bottom: 2em;
+}
+
+/* side bar */
 .textwidget {
 	line-height: 1.6;
 }
@@ -346,7 +391,6 @@ header hr {
 .widget h6, .widget h6 a {
 	/* title */
 	color: #000;
-
 }
 
 #wp-calendar {
@@ -432,20 +476,15 @@ header hr {
 
 .sharedaddy {
 	margin:1.5em 0;
+	text-align: right;
+}
+.sd-content ul {
+	float: right;
 }
 
-
-
-/* Twitter stuff */
-
-a.aktt_tweet_time, a.aktt_tweet_time:active, a.aktt_tweet_time:visited, a.aktt_tweet_time:link {
-	color:#eee;
-	text-decoration:none;
+ul.scrd_digest {
+	font-size: 0.889em !important;
 }
-a.aktt_tweet_time:hover {
-	text-decoration:underline;
-	color:#ccc;
-}    	
 
 a.pdf {
 	background:url("/img/pdf.gif") no-repeat right top;
