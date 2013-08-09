@@ -37,6 +37,7 @@ daigo.org Logo is Didact Gothic
 
 body {
 	font-family: 'Lora', Georgia, serif;
+	color: #444;
 }
 .row {
 	max-width: 76.125em;
@@ -111,11 +112,14 @@ article.fixed {position:static;}
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Stint Ultra Expanded',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color: #222222;
-  line-height: 1em; }
+	font-family: 'Stint Ultra Expanded',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: #222222;
+	line-height: 1em; 
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
 
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
@@ -140,6 +144,10 @@ h1, h2, h3, h4, h5, h6 {
 	float:left;
 	margin-top:10px;
 }
+.menu-icon span {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
 
 @media only screen and (min-width: 48em){
 	/* Brand - expand with menu */
@@ -155,6 +163,15 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top:20px;
 	}
 }
+
+.post header h1, 
+.post header h1 a,
+.post header h2, 
+.post header h2 a {
+	color: #000;
+}
+
+
 
 time, .byline {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
@@ -264,7 +281,7 @@ article footer p {
 }
 
 header hr {
-	border-color: #ddd;
+	border-color: #eee;
 }
 
 /* spacing in the side bar */
@@ -272,15 +289,72 @@ header hr {
 	margin-bottom: 2em;
 }
 
-/* Footer */
-.site-footer {
-	margin: 3em 0;
+/* body spacer 
+	first child elements in .entry-content gets a little margin-left
+*/
+
+	/* level one */
+	.entry-content > p,
+	.entry-content > pre {
+		margin-left: 2%;
+		-ms-word-wrap: break-word;
+		word-wrap: break-word;
+	}
+
+	/* level two */
+	.entry-content > ul,
+	.entry-content > ol,
+	.entry-content > dl {
+		margin-left: 6%;
+	}
+
+	/* level three */
+
+	.entry-content > blockquote, 
+	.entry-content > address {
+		margin-left: 10%;
+		-ms-word-wrap: break-word;
+		word-wrap: break-word;
+	}
+
+/* side bar */
+
+.textwidget {
+	line-height: 1.6;
 }
-.site-footer p {
+
+.widget h6, .widget h6 a {
+	/* title */
+	color: #000;
+
+}
+
+#wp-calendar {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	border-color: #eee;
+}
+
+/* calendar squeeze */
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+	#wp-calendar tr td {
+		padding: 0.3625em 0.325em; /* 0.5625em 0.625em */
+	}
+}
+
+
+/* Footer */
+
+.site-footer {
+	background-color: #e6e6e6;
+	margin: 1.5em 0 0;
+	padding-bottom:3em;
+}
+.site-footer p, 
+.site-footer ul  {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
 	font-size: 0.875em; /* 14px */
 	color: #999;
-	margin-bottom:2em;
+	margin-bottom:2.1em;
 }
 .site-footer > a {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
