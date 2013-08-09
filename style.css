@@ -122,10 +122,23 @@ article {
 article header {
 	margin-bottom: 1.5em;
 }
-
 article header .author {
 	margin-top: .75em;
 }
+
+/* More white spaces for wider screen */
+@media only screen and (min-width: 1000px){
+	article {
+		margin-bottom: 4.25em;
+	}
+	article header {
+		margin-bottom: 2.5em;
+	}
+	article header .author {
+		margin-top: 1.75em;
+	}
+}
+
 
 article.fixed {position:static;}
 
@@ -218,10 +231,6 @@ input#searchsubmit {
 	margin-left: 5%;
 }
 
-
-.entry-content > ul li {
-
-}
 
 
 
@@ -337,16 +346,19 @@ header hr {
 
 /* body spacer 
 	first child elements in .entry-content gets a little margin-left
+	Default
 */
 
 	/* level one */
+	article header > p,
+	article header > time,
+	article footer,
 	.entry-content > p,
 	.entry-content > pre {
 		margin-left: 2%;
 		-ms-word-wrap: break-word;
 		word-wrap: break-word;
 	}
-
 	/* level two */
 	.entry-content > ul,
 	.entry-content > ol,
@@ -362,6 +374,28 @@ header hr {
 		word-wrap: break-word;
 	}
 
+/* media queries, larger than 1000px more white space! */
+@media only screen and (min-width: 1000px)  {
+	/* level one */
+	article header > p,
+	article header > time,
+	article footer,
+	.entry-content > p,
+	.entry-content > pre {
+		margin-left: 15%;
+	}
+	/* level two */
+	.entry-content > ul,
+	.entry-content > ol,
+	.entry-content > dl {
+		margin-left: 20%;
+	}
+	/* level three */
+	.entry-content > blockquote, 
+	.entry-content > address {
+		margin-left: 25%;
+	}
+}
 
 /* Body unorderd list to have document icons. */ 
 /* http://stackoverflow.com/questions/13354578/custom-li-list-style-with-font-awesome-icon */
@@ -376,6 +410,32 @@ header hr {
 	display: inline-block;
 	margin-left: -1.2em; /*same as padding-left set on li*/
 	width: 1.2em; /*same as padding-left set on li*/
+}
+
+.entry-content > ul ul li:before {
+	content: "\f016";
+}
+
+.entry-content > ul ul ul li:before {
+	content: "\f15b";
+}
+
+/* specify icon here */
+.entry-content > ul li:before {
+	content: "\f15c";
+	font-family: FontAwesome;
+}
+
+/* for side bar and footer widget */
+.widget div > ul, .widget > ul {
+  list-style: none;
+}
+.widget div > ul li:before, .widget > ul li:before {
+	color: #999;
+	content: "\f0da";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-left: -.8em;	
 }
 
 /* spacing in the side bar */
