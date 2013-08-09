@@ -16,6 +16,8 @@ get_header(); ?>
 					/* reverie_entry_meta(); 
 						Removing everything but the title! This page is a free reign!
 					*/
+					/* edit link */ 
+				echo edit_post_link('Edit this', '<p class="byline author editthis">','</p>');
 				?>
 			</header>
 			<div class="page-content"> <?php /* no longer entry content */ ?>

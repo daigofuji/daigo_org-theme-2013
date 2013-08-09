@@ -266,25 +266,32 @@ article footer p {
  	color:white;
 }
 .top-bar {
-	background-color: #ccc;
-	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#d0d0d0),color-stop(50%,#cccccc),color-stop(100%,#c0c0c0));
-	background: -webkit-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
-	background: -moz-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
-	background: -o-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
-	background: linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
-	border-top: 1px solid #f2f2f2;}
- .contain-to-grid  {
+	background: #f3f3f3;
+	background: -moz-linear-gradient(top,  #f3f3f3 0%, #f9f9f9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#f9f9f9));
+	background: -webkit-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: -o-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: -ms-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: linear-gradient(to bottom,  #f3f3f3 0%,#f9f9f9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f9f9f9',GradientType=0 );
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #ddd; 
+}
+.contain-to-grid  {
 	background: transparent;
 }
 .top-bar.expanded {
-	background-color: #ccc;
-	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#d0d0d0),color-stop(50%,#cccccc),color-stop(100%,#c0c0c0));
-	background: -webkit-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
-	background: -moz-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
-	background: -o-linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
-	background: linear-gradient(#d0d0d0,#cccccc,#c0c0c0);
+	background: #f3f3f3;
+	background: -moz-linear-gradient(top,  #f3f3f3 0%, #f9f9f9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#f9f9f9));
+	background: -webkit-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: -o-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: -ms-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: linear-gradient(to bottom,  #f3f3f3 0%,#f9f9f9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f9f9f9',GradientType=0 );
 	border-top: 1px solid #f2f2f2;
-	border-bottom: 1px solid #8c8c8c; }   
+	border-bottom: 1px solid #ddd;
+}   
 .top-bar.expanded .title-area {
 	background: transparent;
 }
@@ -303,24 +310,31 @@ article footer p {
     background: rgba(0,0,0,.05); }
 	.top-bar-section .divider {
 		border-bottom: solid 1px #e0e0e0;
-		border-top: solid 1px #b0b0b0;
+		border-top: solid 1px #fff;
 	}
 .top-bar .name h1 a, .top-bar-section ul li > a {
 	color: #6d6d6d;
+}
+.top-bar .toggle-topbar.menu-icon a span {
+	-webkit-box-shadow: 0 10px 0 1px #bbb, 0 16px 0 1px #bbb, 0 22px 0 1px #bbb;
+	box-shadow: 0 10px 0 1px #bbb, 0 16px 0 1px #bbb, 0 22px 0 1px #bbb;
+	color: #bbb;
 }
 
 @media only screen and (min-width: 58.75em) {
 
 /* Nav */
  .contain-to-grid  {
-	background-color: #ccc;
-	background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#e0e0e0),color-stop(50%,#cccccc),color-stop(100%,#b0b0b0));
-	background: -webkit-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: -moz-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: -o-linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
-	background: linear-gradient(#e0e0e0,#cccccc,#b0b0b0);
+	background: #f3f3f3;
+	background: -moz-linear-gradient(top,  #f3f3f3 0%, #f9f9f9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#f9f9f9));
+	background: -webkit-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: -o-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: -ms-linear-gradient(top,  #f3f3f3 0%,#f9f9f9 100%);
+	background: linear-gradient(to bottom,  #f3f3f3 0%,#f9f9f9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f9f9f9',GradientType=0 );
 	border-top: 1px solid #f2f2f2;
-	border-bottom: 1px solid #8c8c8c;
+	border-bottom: 1px solid #ddd;
 }
    
   .top-bar {
@@ -340,7 +354,7 @@ article footer p {
       background: transparent;}
        .top-bar-section > ul > .divider {
       border-right: solid 1px #e0e0e0;
-      border-left: solid 1px #b0b0b0; }
+      border-left: solid 1px #fff; }
 }
 
 header hr {
@@ -359,7 +373,8 @@ header hr {
 	article footer,
 	.entry-content > p,
 	.entry-content > pre,
-	#commentform {
+	#commentform,
+	[id^="contact-form-"] {
 		margin-left: 2%;
 		-ms-word-wrap: break-word;
 		word-wrap: break-word;
@@ -387,7 +402,8 @@ header hr {
 	article footer,
 	.entry-content > p,
 	.entry-content > pre,
-	#commentform {
+	#commentform,
+	[id^="contact-form-"] {
 		margin-left: 15%;
 	}
 	/* level two */

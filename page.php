@@ -8,14 +8,17 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php reverie_entry_meta(); ?>
+				<?php /* don't need this reverie_entry_meta(); */ 
+				echo edit_post_link('Edit this', '<p class="byline author editthis">','</p>');
+				?>
+
 			</header>
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div>
 			<footer>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
-				<p><i class="icon-tags"></i> <?php the_tags(); ?></p>
+				<?php /* removed the_tags(); */ ?>
 			</footer>
 			<?php comments_template(); ?>
 		</article>
