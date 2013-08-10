@@ -466,7 +466,7 @@ header hr {
 	font-family: FontAwesome;
 	display: inline-block;
 	margin-left: -.8em;	
-	width:.4em;
+	width: .8em;
 }
 
 /* spacing in the side bar */
@@ -566,8 +566,8 @@ header hr {
 /* plugin stuff */
 
 .sharedaddy {
-	margin:1.5em 0;
-	text-align: right;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
 }
 .sd-content ul {
 	float: right;
