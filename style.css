@@ -134,6 +134,9 @@ article header .author {
 	article header {
 		margin-bottom: 2.5em;
 	}
+	article header.comment-author {
+		margin-bottom: 1.5em;
+	}
 	article header .author {
 		margin-top: 1.75em;
 	}
@@ -374,6 +377,8 @@ header hr {
 	.entry-content > p,
 	.entry-content > pre,
 	#commentform,
+	.yarpp-related,
+	.sharedaddy,
 	[id^="contact-form-"] {
 		margin-left: 2%;
 		-ms-word-wrap: break-word;
@@ -382,7 +387,8 @@ header hr {
 	/* level two */
 	.entry-content > ul,
 	.entry-content > ol,
-	.entry-content > dl {
+	.entry-content > dl, 
+	#comments > ol {
 		margin-left: 6%;
 	}
 
@@ -403,13 +409,16 @@ header hr {
 	.entry-content > p,
 	.entry-content > pre,
 	#commentform,
+	.yarpp-related,
+	.sharedaddy,
 	[id^="contact-form-"] {
 		margin-left: 15%;
 	}
 	/* level two */
 	.entry-content > ul,
 	.entry-content > ol,
-	.entry-content > dl {
+	.entry-content > dl, 
+	#comments > ol {
 		margin-left: 20%;
 	}
 	/* level three */
