@@ -49,8 +49,9 @@ add_action('wp_head', 'viewport_responsive_meta');
 // return entry meta information for posts, used by multiple loops. 
 // edited Aug 2013 by Daigo
 function reverie_entry_meta() {
-    echo '<p class="byline author">'. __('By', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a> '. edit_post_link('Edit this', " | ") .' </p>';
-    echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate><i class="icon-calendar-empty"></i> '. sprintf(__('Posted on %s at %s.', 'reverie'), get_the_time('l, F jS, Y'), get_the_time()) .'</time>';
+    echo '<p class="byline author">'. __('By', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p>';
+    echo edit_post_link('Edit this', '<p class="byline author editthis">','</p>');
+    echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate><i class="icon-calendar-empty"></i> '. sprintf(__('Published on %s', 'reverie'), get_the_time('l, F jS, Y'), get_the_time()).'</time>';
 }
 */
 
