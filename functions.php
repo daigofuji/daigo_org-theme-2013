@@ -55,4 +55,23 @@ function reverie_entry_meta() {
 }
 */
 
+/* Adding zurb responsive table script, php method taken from here:
+http://codex.wordpress.org/Function_Reference/wp_enqueue_script
+*/
+add_action( 'wp_enqueue_scripts', 'child_add_scripts' );
+
+/**
+ * Register and enqueue a script that does not depend on a JavaScript library.
+ */
+function child_add_scripts() {
+    wp_register_script(
+        'responsive-tables',
+        get_stylesheet_directory_uri() . '/js/responsive-tables.js',
+        false,
+        '1.0',
+        true
+    );
+    wp_enqueue_script( 'responsive-tables' );
+}
+
 ?>

@@ -24,6 +24,9 @@ daigo.org Logo is Didact Gothic
 
 @import url("../reverie/style.css");
 
+/* responsive table from zurb http://zurb.com/playground/responsive-tables */
+@import url("css/responsive-tables.css");
+
 
 /* custom CSS link */
 /* this is how I uded to do it, but why not just edit here? 
