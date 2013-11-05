@@ -47,6 +47,11 @@ body {
 }
 .contain-to-grid .top-bar {
 	max-width: 76.125em;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.top-bar-section ul li.active > a {
+	color: #111;
 }
 /* Default Link Styles
 foundation link color is #2ba6cb hover #2795b6 */
@@ -75,7 +80,9 @@ a {
 .green .basecolor {
 	color: #e0edd0;
 }
-
+.green .page-numbers li span.current {
+	background: #314836;
+}
 /* Blue */
 .blue .darkcolor, 
 .blue a:hover, 
@@ -90,6 +97,9 @@ a {
 .blue .basecolor {
 	color: #dae9fd;
 	}
+.blue .page-numbers li span.current {
+	background: #1f324d;
+}
 /* Purple */
 .purple .darkcolor, 
 .purple a:hover, 
@@ -104,6 +114,9 @@ a {
 .purple .basecolor {
 	color: #e1dce5;
 }
+.purple .page-numbers li span.current {
+	background: #190b31;
+}
 /* Red */
 .red .darkcolor, 
 .red a:hover, 
@@ -117,6 +130,9 @@ a {
 	} 
 .red .basecolor {
 	color: #fed8cd;
+}
+.red .page-numbers li span.current {
+	background: #661c12;
 }
 
 article {
@@ -454,6 +470,25 @@ header hr {
 	content: "\f15b";
 }
 
+
+/* pagination */
+
+.pagination-centered > ul {
+	margin: 1em auto;
+}
+.page-numbers li {
+	float: none;
+	display: inline-block;
+}
+
+
+ul.find-me li {
+	float: none;
+	display: inline-block;
+}
+ul.find-me li:first-child {
+	margin-left:0;
+}
 /* specify icon here */
 .entry-content > ul.arrow li:before {
 	content: "\f061";

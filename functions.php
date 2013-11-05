@@ -19,7 +19,7 @@ add_filter('body_class','body_color_class');
 
 // Custom login page. Modifying logo image, link and title
 function my_custom_login_logo() {
-    echo '<style type="text/css"> h1 a { background-image:url('.get_stylesheet_directory_uri().'/img/logo-login-daigoorg.gif) !important; }</style>';
+    echo '<style type="text/css"> h1 a { background-image:url('.get_stylesheet_directory_uri().'/img/glasses.png) !important; }</style>';
 }
 add_action('login_head', 'my_custom_login_logo');
 
