@@ -154,7 +154,7 @@ article header .author {
 		margin-bottom: 2.5em;
 	}
 	article header.comment-author {
-		margin-bottom: 1.5em;
+		margin-bottom: 1em;
 	}
 	article header .author {
 		margin-top: 1.75em;
@@ -258,15 +258,10 @@ input#searchsubmit {
 }
 
 
-
-
-time, 
-.byline, 
-.rss-date, 
-.post-date {
+.byline {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
-	font-size: 0.875em; /* 14px */
-	color: #666;
+	font-size: 1em; /* 16px */
+	color: #888;
 	margin-bottom: 0.2em;
 }
 .editthis {
@@ -274,7 +269,9 @@ time,
 	font-weight:bold;
 }
 
-article footer p {
+article footer p, 
+.rss-date, 
+.post-date {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;	
 	font-size: 0.875em; /* 14px */
 	color: #666;

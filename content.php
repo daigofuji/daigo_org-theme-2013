@@ -17,6 +17,7 @@
 	</div>
 	<footer>
 		<p>
+			<i class="icon-calendar"></i> Posted on <?php the_time('l, F jS, Y'); ?> at <?php the_time('g:i a'); ?> | 
 			<i class="icon-folder-open"></i> Filed under: <?php the_category(', ') ?> <?php $tag = get_the_tags(); if (!$tag) { } else { ?> | <i class="icon-tags"></i> Tagged: <?php the_tags('', ', ', '');  } ?> | <i class="icon-comments"></i> <?php comments_popup_link('Leave a reply »', '1 reply »', '% replies »'); ?> <?php edit_post_link(); ?> 
 		</p>
 	</footer>

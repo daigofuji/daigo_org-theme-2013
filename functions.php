@@ -74,4 +74,12 @@ function child_add_scripts() {
     wp_enqueue_script( 'responsive-tables' );
 }
 
+// commented this out from parent theme
+// return entry meta information for posts, used by multiple loops.
+function reverie_entry_meta() {
+    echo '<p class="byline author">';
+    echo '<i class="icon-user"></i> '. __('Written by', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a> &#8212; ';
+    echo ' <time class="updated byline-date" datetime="'. get_the_time('c') .'" pubdate><i class="icon-time"></i> '. human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago' .'</time>';
+    echo '</p>';
+}
 ?>
