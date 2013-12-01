@@ -12,7 +12,7 @@ See it in action: http://daigo.org
 
 I plan to be updating it.
 
-While I am running unit tests and the theme appears to be working fine, but it is  the works.
+While I am running unit tests and the theme appears to be working fine, but it is still in the works, and I plan working on it time to time.
 You are free to use this theme. Hope you enjoy it.
 If something is broken, you can let me know and I will try to fix it when I can, 
 or feel free to get in touch via github -- issues, pull request 
@@ -26,7 +26,7 @@ http://themefortress.com/reverie/
 
 http://foundation.zurb.com/
 
-This theme also use Font Awesome
+This theme also use Font Awesome (also MIT licence)
 http://fortawesome.github.io/Font-Awesome/
 
-also MIT licence
+
