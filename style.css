@@ -5,8 +5,11 @@ Description: Reverie Child Theme by Daigo. Responsive and based on Foundation 4.
 Author: Daigo Fujiwara
 Author URI: http://daigo.org/
 Template: reverie
-Version: 1.0
+Version: 1.1
 Tags: 
+
+
+Update logs: Reverie 5 is out, and I am editing bunch of small style stuff to match style. Upgrading to 1.1. Dec 23, 2013
 
 */
 
@@ -19,11 +22,9 @@ daigo.org Logo is Didact Gothic
 @import url("http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Stint+Ultra+Expanded");
 @import url("css/font-awesome.min.css");
 
-
 /* getting base css for reverie */
 
 @import url("../reverie/style.css");
-
 /* responsive table from zurb http://zurb.com/playground/responsive-tables */
 @import url("css/responsive-tables.css");
 
@@ -33,9 +34,7 @@ daigo.org Logo is Didact Gothic
 @import url("custom/daigo.css");
 */
 
-/* Over ride foundation defaults 
-	
-
+/* Over ride foundation defaults
 */ 
 
 body {
@@ -53,6 +52,13 @@ body {
 .top-bar-section ul li.active > a {
 	color: #111;
 }
+
+/* remove reverie override style.css 37*/
+h4.subheader, ol.commentlist cite.subheader.fn {
+  margin-top: 0;
+}
+
+
 /* Default Link Styles
 foundation link color is #2ba6cb hover #2795b6 */
 a {
@@ -219,6 +225,8 @@ input#searchsubmit {
 	height:2.2em;
 }
 
+
+/* 48em is 768px */
 @media only screen and (min-width: 48em){
 	/* Brand - expand with menu */
 	.brand h1 {
