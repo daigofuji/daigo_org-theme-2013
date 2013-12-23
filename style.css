@@ -215,6 +215,8 @@ h1, h2, h3, h4, h5, h6 {
 
 input#searchsubmit {
 	font-family: FontAwesome;
+	padding:0;
+	height:2.2em;
 }
 
 @media only screen and (min-width: 48em){
@@ -340,9 +342,6 @@ article footer p,
 	color: #bbb;
 }
 
-@media only screen and (min-width: 58.75em) {
-
-/* Nav */
  .contain-to-grid  {
 	background: #f3f3f3;
 	background: -moz-linear-gradient(top,  #f3f3f3 0%, #f9f9f9 100%);
@@ -361,7 +360,7 @@ article footer p,
 
     .top-bar.expanded {
       background: transparent; }
- .top-bar-section li a:not(.button) {
+ .top-bar-section li a:not(.button)  {
       background: transparent; }
   .top-bar-section li a:not(.button):hover {
         background: rgba(0,0,0,.1); }
@@ -374,7 +373,7 @@ article footer p,
        .top-bar-section > ul > .divider {
       border-right: solid 1px #e0e0e0;
       border-left: solid 1px #fff; }
-}
+
 
 header hr {
 	border-color: #eee;
@@ -523,11 +522,19 @@ ul.find-me li:first-child {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	border-color: #eee;
 }
-
-/* calendar squeeze */
-@media only screen and (max-width: 1000px) and (min-width: 768px) {
-	#wp-calendar tr td {
+#wp-calendar tr td {
 		padding: 0.3625em 0.325em; /* 0.5625em 0.625em */
+	}
+
+
+
+#sidebar .panel #calendar_wrap {
+	margin-left: 0;
+}
+/* calendar move right */
+@media only screen and (min-width: 1024px) and (max-width: 1249px) {
+	#sidebar .panel #calendar_wrap {
+		margin-left: -0.9375em; 
 	}
 }
 
