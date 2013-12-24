@@ -40,6 +40,7 @@ daigo.org Logo is Didact Gothic
 body {
 	font-family: 'Lora', Georgia, serif;
 	color: #444;
+	background: #fff;
 }
 .row {
 	max-width: 76.125em;
@@ -57,7 +58,9 @@ body {
 h4.subheader, ol.commentlist cite.subheader.fn {
   margin-top: 0;
 }
-
+#sidebar .panel, .footer-widget .panel {
+	background-color: #f7f7f7;
+}
 
 /* Default Link Styles
 foundation link color is #2ba6cb hover #2795b6 */
